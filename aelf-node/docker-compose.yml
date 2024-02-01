@@ -14,7 +14,4 @@ services:
     security_opt:
       - seccomp=unconfined
     privileged: true
-    image: aelf/standalone-testing-node
-    volumes:
-      - ./appsettings.json:/app/appsettings.json:rw
-      - ~/.local/share/aelf/keys:/root/.local/share/aelf/keys
+    image: gldeng/aelf-groth16-10
